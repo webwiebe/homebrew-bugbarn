@@ -1,16 +1,16 @@
 class Bb < Formula
   desc "CLI client for BugBarn error tracking"
   homepage "https://github.com/wiebe-xyz/bugbarn"
-  version "0.236.41"
+  version "0.236.42"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://webwiebe.nl/brew/bb-darwin-amd64-0.236.41.tar.gz"
-      sha256 "43b8c871f788ac0d73ba64a112f9f6bfbdff91c2ce5a807fde98a62373ebe9c8"
+      url "https://webwiebe.nl/brew/bb-darwin-amd64-0.236.42.tar.gz"
+      sha256 "2f252eec8f06617543ffc1d61b4fc2330b70a5819409367020d699bd3ffb0015"
     elsif Hardware::CPU.arm?
-      url "https://webwiebe.nl/brew/bb-darwin-arm64-0.236.41.tar.gz"
-      sha256 "f0afbe793e2057762c51f24dee7f3328e9286bbd6e64497843e5df1f5bbdbc68"
+      url "https://webwiebe.nl/brew/bb-darwin-arm64-0.236.42.tar.gz"
+      sha256 "e9c9e2a82c054e62f9b7bc7a1fa0bd7f0431c95fa00929ad5ff8a2253535a544"
     end
   end
 
