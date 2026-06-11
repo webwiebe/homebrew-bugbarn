@@ -7,10 +7,10 @@ class Bugbarn < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://webwiebe.nl/brew/bugbarn-darwin-amd64-0.236.66.tar.gz"
-      sha256 "2e256aeac5df3c016bcc0d42cd1664290ee6d87798c6fce24a40be0d6ea75b2f"
+      sha256 "45fe0ad8d725578081e1fe55ff5ea12ad7b45f2deebb28db48d727c76114fcf7"
     elsif Hardware::CPU.arm?
       url "https://webwiebe.nl/brew/bugbarn-darwin-arm64-0.236.66.tar.gz"
-      sha256 "b4644d0afc77f7e374dd95411e7ccd39bdcb27de75e908e2388dfafa3bcdb93a"
+      sha256 "90271a3d613993597d36b1eafc17f5887f9ac7436e5a470381045799866594bd"
     end
   end
 

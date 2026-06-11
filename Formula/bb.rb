@@ -7,10 +7,10 @@ class Bb < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://webwiebe.nl/brew/bb-darwin-amd64-0.236.66.tar.gz"
-      sha256 "f5251e0f0074d9c21debdc6223bd8ece969ea5d5e89cd776f5cff35687f95254"
+      sha256 "4a5b4542123d3b923f4bb6006b6fd6c9f821021db490ec172e97a26dd48cfc62"
     elsif Hardware::CPU.arm?
       url "https://webwiebe.nl/brew/bb-darwin-arm64-0.236.66.tar.gz"
-      sha256 "0ec6082c4a051c28d04e482fecaace707d8d48c5009836e7d478285ad06ad7cb"
+      sha256 "570b7e5c70a20fb0c40a03448be5637c8b9c8d0c6f222ea234f5c71853ee0f72"
     end
   end
 
