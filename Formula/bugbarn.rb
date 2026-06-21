@@ -1,16 +1,16 @@
 class Bugbarn < Formula
   desc "Self-hosted error tracking server"
   homepage "https://github.com/wiebe-xyz/bugbarn"
-  version "0.236.87"
+  version "0.236.88"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://webwiebe.nl/brew/bugbarn-darwin-amd64-0.236.87.tar.gz"
-      sha256 "17c25069731c168daa2824c385916e044d2747ff56ae2a578bec591e88130327"
+      url "https://webwiebe.nl/brew/bugbarn-darwin-amd64-0.236.88.tar.gz"
+      sha256 "9e7d7de9e0d43e8917b5e7b2f88fb788c08ecd0f42eeb25b89c67d9f97d158f4"
     elsif Hardware::CPU.arm?
-      url "https://webwiebe.nl/brew/bugbarn-darwin-arm64-0.236.87.tar.gz"
-      sha256 "bb6e5930ded2d9e2f6cdb557fb01ae75b6ce50cbc5b3a9bd4b2fea2697fcc591"
+      url "https://webwiebe.nl/brew/bugbarn-darwin-arm64-0.236.88.tar.gz"
+      sha256 "ae5f6a8e423c3c672e46fe3ade2740e1ae3c9887d5db151eb36521919b02edbd"
     end
   end
 
