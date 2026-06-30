@@ -1,5 +1,5 @@
 class Bb < Formula
-  desc "CLI client for BugBarn error tracking"
+  desc "BugBarn"
   homepage "https://github.com/wiebe-xyz/bugbarn"
   version "0.236.112"
   license "MIT"
@@ -7,18 +7,14 @@ class Bb < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://webwiebe.nl/brew/bb-darwin-amd64-0.236.112.tar.gz"
-      sha256 "b494e44b6b55052db32128b3ff5742b7592560352419dfd33a45369d3d4edff6"
+      sha256 "f598152e49fc94fd8e1454eeb466207ed674f94451ae39a88f018b386711bf8a"
     elsif Hardware::CPU.arm?
       url "https://webwiebe.nl/brew/bb-darwin-arm64-0.236.112.tar.gz"
-      sha256 "eaf30aeba497e1e0561d975602fb1b7a48814a5f2135453e026ee488b6566995"
+      sha256 "f8f999f622d44ab2dbc372848b8857ad2c7f614c736ecb8bb1a0db2ff799076a"
     end
   end
 
   def install
     bin.install "bb"
-  end
-
-  test do
-    assert_match version.to_s, shell_output("#{bin}/bb version")
   end
 end

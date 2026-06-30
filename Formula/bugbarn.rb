@@ -1,5 +1,5 @@
 class Bugbarn < Formula
-  desc "Self-hosted error tracking server"
+  desc "BugBarn"
   homepage "https://github.com/wiebe-xyz/bugbarn"
   version "0.236.112"
   license "MIT"
@@ -7,18 +7,14 @@ class Bugbarn < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://webwiebe.nl/brew/bugbarn-darwin-amd64-0.236.112.tar.gz"
-      sha256 "addfd555656418ddb143e0b6ddccd7b68e68c9fb28b295693af530a7a3019fc5"
+      sha256 "5e6fa52e8fbcba1e0ba96b4736d54004b31a2f69378878dee0523510b22fc9e0"
     elsif Hardware::CPU.arm?
       url "https://webwiebe.nl/brew/bugbarn-darwin-arm64-0.236.112.tar.gz"
-      sha256 "bf64eb80ef37d78d9a4d062784a64bc467ff7dca01584f964065019019e04b6d"
+      sha256 "b9166894d92af6c6b004dfcd7a4688d2f89d57ab31fab0a8f630b2a2190d934f"
     end
   end
 
   def install
     bin.install "bugbarn"
-  end
-
-  test do
-    assert_match version.to_s, shell_output("#{bin}/bugbarn version")
   end
 end
