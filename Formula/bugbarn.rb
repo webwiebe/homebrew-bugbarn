@@ -1,16 +1,16 @@
 class Bugbarn < Formula
   desc "BugBarn"
   homepage "https://github.com/wiebe-xyz/bugbarn"
-  version "0.236.367"
+  version "0.236.368"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://webwiebe.nl/brew/bugbarn-darwin-amd64-0.236.367.tar.gz"
-      sha256 "382df931b5e98c1bfd2f1125d77799fcea83b40776ff491baa776ae223e791ad"
+      url "https://webwiebe.nl/brew/bugbarn-darwin-amd64-0.236.368.tar.gz"
+      sha256 "b17b0d2f4177e27a76976b3456b81bfdc485b45c374e54c86a064f7c12c11eb2"
     elsif Hardware::CPU.arm?
-      url "https://webwiebe.nl/brew/bugbarn-darwin-arm64-0.236.367.tar.gz"
-      sha256 "b9f89d3d7c9777ecbcb8c38efcefd4f0d9ebcfc2ac3030d4475ac3eacf709f62"
+      url "https://webwiebe.nl/brew/bugbarn-darwin-arm64-0.236.368.tar.gz"
+      sha256 "5d50b50be86b7a262b7a1b0cd7ce9c58116c365fa543fa7f019295d9ec4a8d8f"
     end
   end
 
